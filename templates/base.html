@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/add_employee.css' %}">
 
     <title>Document</title>
 </head>
@@ -25,10 +25,16 @@
               <a class="nav-link" href="{% url 'add-leave-form' %}">Leave Form</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">All Application</a>
+              <a class="nav-link" href="{% url 'all_application' %}">All Application</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
+              <a class="nav-link" href="{% url 'todolist' %}">ToDoList</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'add_employee' %}">Add Employee</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'user_logout' %}">Logout</a>
             </li>
           </ul>
         </div>
